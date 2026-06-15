@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+
+# Never commit raw, intermediate, or processed research data.
+data/raw/
+data/interim/
+data/processed/
+
+# Common data formats are excluded throughout the project as an extra safeguard.
+*.csv
+*.xlsx
+*.xls
+*.dta
+*.parquet
+*.feather
+
+# Annual reports and extracted text must remain local.
+*.pdf
+
+# Generated outputs can be recreated locally.
+outputs/tables/*
+outputs/figures/*
+!outputs/tables/.gitkeep
+!outputs/figures/.gitkeep
+

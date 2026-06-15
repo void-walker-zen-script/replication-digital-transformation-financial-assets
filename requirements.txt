@@ -1,0 +1,9 @@
+pandas
+numpy
+statsmodels
+linearmodels
+openpyxl
+pdfplumber
+jieba
+jupyter
+
