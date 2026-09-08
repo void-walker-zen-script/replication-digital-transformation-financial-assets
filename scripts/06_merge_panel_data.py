@@ -27,6 +27,7 @@ REQUIRED_BY_INPUT = {
         "LEV",
         "ROA",
         "ListAge",
+        "TobinQ",
         "TOP1",
         "Indep",
     ],
@@ -41,6 +42,7 @@ FINAL_COLUMNS = [
     "LEV",
     "ROA",
     "ListAge",
+    "TobinQ",
     "TOP1",
     "Indep",
 ]

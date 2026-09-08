@@ -21,6 +21,7 @@ SOURCE_COLUMNS = [
     "total_liabilities",
     "net_profit",
     "listing_year",
+    "tobin_q",
     "largest_shareholder_ownership",
     "independent_directors",
     "total_directors",
@@ -90,6 +91,7 @@ def construct_controls(data: "pd.DataFrame") -> "pd.DataFrame":
     output["LEV"] = result["total_liabilities"] / result["total_assets"]
     output["ROA"] = result["net_profit"] / result["total_assets"]
     output["ListAge"] = np.log(listing_age_years)
+    output["TobinQ"] = result["tobin_q"]
     output["TOP1"] = result["largest_shareholder_ownership"]
     output["Indep"] = (
         result["independent_directors"] / result["total_directors"]
@@ -133,4 +135,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
